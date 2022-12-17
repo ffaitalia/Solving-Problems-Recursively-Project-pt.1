@@ -9,7 +9,11 @@ Examples:
 
 
 function iceCreamShop(flavors, favorite) {
+  if (!flavors.length) return false;
 
+  if (flavors[0] === favorite) return true;
+
+  return iceCreamShop(flavors.slice(1), favorite);
 }
 
 
