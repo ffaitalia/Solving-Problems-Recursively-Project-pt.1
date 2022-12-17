@@ -5,14 +5,13 @@ include a mix of positive and negative integers!
 
 Examples:
 
-sumArray([0, 1, -3]); //  -2
-sumArray([1, 2, 3, 4, 5]); // 15
 ***********************************************************************/
 
 function sumArray(arr) {
-
 }
 
+// console.log(sumArray([0, 1, -3])); //  -2
+// console.log(sumArray([1, 2, 3, 4, 5])); // 15
 console.log(sumArray([1, 2, 3])); //  6
 
 
@@ -56,11 +55,11 @@ console.log(sumArray([1, 2, 3])); //  6
 
 
 
-if (arr.length === 0) {
-  return 0;
-}
+// if (arr.length === 0) {
+//   return 0;
+// }
 
-return arr[0] + sumArray(arr.slice(1));
+// return arr[0] + sumArray(arr.slice(1));
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sumArray;

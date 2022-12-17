@@ -10,7 +10,6 @@ Examples:
 
 function range(start, end) {
 
-
 }
 
 
@@ -59,11 +58,11 @@ console.log(range(7, 6)); // []
 
 
 
-if (end <= start) {
-  return [];
-}
+// if (end <= start) {
+//   return [];
+// }
 
-return [start, ...range((start + 1), end)];
+// return [start, ...range((start + 1), end)];
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = range;
