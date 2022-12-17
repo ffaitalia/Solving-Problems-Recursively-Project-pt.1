@@ -4,11 +4,6 @@ an array of all numbers in that range, exclusive. If the end number is less than
 the start, return an empty array.
 
 Examples:
-if (end <= start) {
-  return [];
-}
-
-return [start, ...range((start + 1), end)];
 
 ***********************************************************************/
 
@@ -22,6 +17,53 @@ function range(start, end) {
 console.log(range(1, 5)); // [1, 2, 3, 4]
 console.log(range(3, 4)); // [3]
 console.log(range(7, 6)); // []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (end <= start) {
+  return [];
+}
+
+return [start, ...range((start + 1), end)];
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = range;
