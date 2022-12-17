@@ -4,17 +4,17 @@ an array of all numbers in that range, exclusive. If the end number is less than
 the start, return an empty array.
 
 Examples:
+if (end <= start) {
+  return [];
+}
+
+return [start, ...range((start + 1), end)];
 
 ***********************************************************************/
 
 
 function range(start, end) {
 
-  if (end <= start) {
-    return [];
-  }
-
-  return [start, ...range((start + 1), end)];
 
 }
 

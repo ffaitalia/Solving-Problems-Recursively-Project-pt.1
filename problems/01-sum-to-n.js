@@ -4,19 +4,20 @@ the sum of all the numbers from 0 to that number. Return null for any input
 number below 0.
 
 Examples:
+if (n < 0) {
+  return null;
+}
+if (n === 0) {
+  return 0;
+}
+
+return n + sumToN(n - 1);
 
 ***********************************************************************/
 
 
 function sumToN(n) {
-  if (n < 0) {
-    return null;
-  }
-  if (n === 0) {
-    return 0;
-  }
 
-  return n + sumToN(n - 1);
 }
 
 

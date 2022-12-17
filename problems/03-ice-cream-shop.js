@@ -3,6 +3,16 @@ Write a recursive function `iceCreamShop(flavors, favorite)` that takes in an
 array of ice cream flavors available at the ice cream shop, as well as the
 user's favorite ice cream flavor. Recursively find out whether or not the shop
 offers their favorite flavor.
+if (flavors.length === 0) {
+  return false;
+}
+
+
+if (flavors[0] === favorite) {
+  return true;
+}
+
+return iceCreamShop(flavors.splice(1), favorite);
 
 Examples:
 iceCreamShop(['vanilla', 'strawberry'], 'blue moon'); // false
@@ -14,16 +24,6 @@ iceCreamShop([], 'honey lavender'); // false
 
 
 function iceCreamShop(flavors, favorite) {
-  if (flavors.length === 0) {
-    return false;
-  }
-
-
-  if (flavors[0] === favorite) {
-    return true;
-  }
-
-  return iceCreamShop(flavors.splice(1), favorite);
 
 }
 
